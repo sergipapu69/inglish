@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./js/concentrese.js"></script>
+    <link rel="stylesheet" href="./concentrese.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Activity English</title>
+</head>
+
+<body>
+
+    <div id="modal1"></div>
+
+    <div class="bar_container">
+        <div class="logo_color"></div>
+        <div class="bar_title"></div>
+    </div>
+
+    <div class="p30_fondo">
+        <div class="pag27_titulo"></div>
+        <div id="game-board"></div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        function mostrarBox(cual) {
+            // parent.ocultarNav();
+            //ocutlarBox();
+            mitexto = '<div class="p30_modal_box"><div class="p30_box_img" style="background-image: url(../img/Mod_2/fact' + cual + '.png);"><div class="p30_btn_cerrar" id="" onclick="cerrarBox(1);"></div></div></div>';
+            var txt2 = $("#modal1").html(mitexto);
+            $('#modal1').fadeIn('slow');
+            //document.getElementById('btn'+cual).style.filter = "grayscale(100%) drop-shadow(0px 0px 8px #00000073)";
+        }
+
+        function cerrarBox(cual) {
+            // parent.mostrarNav();
+            //ocutlarBox();
+            $('#modal' + cual).fadeOut('slow');
+        }
+
+    </script>
+
+</body>
+
+</html>

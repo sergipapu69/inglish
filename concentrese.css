@@ -1,0 +1,74 @@
+/* PAGINA 30/ ACTIVIDAD */
+
+.p30_fondo{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pagina30 pop up */
+#modal1{
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(16, 15, 66, 0.66);
+    z-index: 1000002;
+    display: none;
+    height: 100vh;
+    width: 100%;
+}
+
+.p30_modal_box{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 15vh;
+    height: 72vh;
+    margin: auto;
+    z-index: 10002;
+    padding: 0em;
+    border: 0px solid rgb(252, 212, 125);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p30_box_img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p30_btn_cerrar{
+    position: relative;
+    top: 30vh;
+    left: 85%;
+    width: 8vh;
+    height: 8vh;
+    background-image: url('./img/x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+    z-index: 13;
+    margin-right: -53vh;
+    margin-top: -26vh;
+    border: 0px solid rgb(3, 169, 244);
+    filter: drop-shadow(rgb(255, 255, 255) 0px 0px 6px);
+}
+.p30_btn_cerrar:hover{
+    filter: drop-shadow(rgb(3, 169, 244) 0px 0px 12px);
+}
